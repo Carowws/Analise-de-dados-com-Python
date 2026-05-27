@@ -1,0 +1,10 @@
+# Lesson 1: Reading and exploring data with Pandas
+import pandas as pd
+
+# Load a real public dataset directly from the web
+url = "https://raw.githubusercontent.com/datasciencedojo/datasets/master/titanic.csv"
+df = pd.read_csv(url)
+
+# Step 1: See the first few rows
+print("=== First 5 rows ===")
+print(df.head())
